@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DMI – St. John the Baptist University | Application Form</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="tools"><button type="button" onclick="print()">Print / Save as PDF</button><button type="button" class="g" onclick="clearAll()">Clear form</button><small>Progress is saved automatically in this browser.</small></div>
+<form id="form" autocomplete="off" onsubmit="return false">
+
+<section class="page p1">
+<div class="hdr"><img src="logo.png" alt="DMI St. John the Baptist logo">
+<h1>DMI – ST. JOHN THE BAPTIST UNIVERSITY</h1><h2>MALAWI</h2>
+<p>(Run by the Fathers of MMI, Sisters of DMI and Collaborators)</p>
+<p><i>Fully approved &amp; accredited by the Government of Malawi</i></p>
+<p><i>Website: www.dmisjbu.edu.mw</i></p>
+<label class="photo" id="photo"><span>Affix recent<br>passport size<br>color photo<br><small>(click to upload)</small></span><input type="file" accept="image/*" id="photoIn"></label></div>
+<div class="campus">
+<div><b>MANGOCHI CAMPUS</b>P.O Box 406,<br>Mangochi, Malawi, Central Africa<br>Ph: + 265 991287235, + 265 884100676<br>Tel: 01599790<br>E-mail: dmisjbu@gmail.com</div>
+<div><b>LILONGWE CAMPUS</b>P.O Box 2398, Area 4, Lilongwe, Malawi,<br>Central Africa<br>Phone: + 265 881047088<br>+ 265 992371901<br>E-mail: dmisjbulilongwe@gmail.com</div>
+<div><b>BLANTYRE CAMPUS</b>P.O Box 5806,<br>Raynor Avenue,Limbe, Malawi, Central Africa<br>Ph: + 265 999933788, + 265 888711115<br>E-mail: ticblantyre@gmail.com</div></div>
+<div class="bar"><label><input type="radio" class="cb" name="level" value="Diploma"> Diploma</label><label><input type="radio" class="cb" name="level" value="Bachelor Degree"> Bachelor Degree</label><span class="btn">APPLICATION FORM</span><span class="appno">Application No: <input class="u" name="appno" style="width:130px;font-size:15px"></span></div>
+
+<h3>A. PERSONAL DETAILS</h3>
+<div class="r">1. Title: <label><input type="radio" class="cb" name="title" value="Mr">Mr.</label> <label><input type="radio" class="cb" name="title" value="Ms">Ms.</label> <i>(Please Tick one)</i></div>
+<div class="r">2. Name of the Applicant: <i>(In Capital Letter)</i></div>
+<div class="cells" id="n1"></div><div class="cells" id="n2"></div>
+<div class="r">3. Gender: <label><input type="radio" class="cb" name="gender">Male</label> <label><input type="radio" class="cb" name="gender">Female</label> &nbsp; 4. Date of the Birth: <span class="cells in" id="dob"></span> &nbsp; 5. Age: <span class="cells in" id="age"></span></div>
+<div class="r">6. Marital Status: <label><input type="radio" class="cb" name="marital">Married</label> <label><input type="radio" class="cb" name="marital">Single</label> &nbsp; 7. Nationality: <input class="f" name="nat" style="width:160px"> &nbsp;&nbsp; 8. Religion: <input class="f" name="rel" style="width:160px"></div>
+<div class="r">9. Home District: <input class="f" name="dist" style="width:155px"> 10. Traditional Authority: <input class="f" name="ta" style="width:160px"> 11. Village: <input class="f" name="vil" style="width:125px"></div>
+<div class="r">12. Tribe: <input class="f" name="tribe" style="width:125px"> &nbsp;&nbsp; 13. Passport/NRC No.: <input class="f" name="nrc" style="width:160px"></div>
+
+<h3 style="margin-top:26px">B. NEXT OF KIN</h3>
+<div class="line">Title:<input name="k_title" style="flex:.5"> Surname :<input name="k_sur"> First Name:<input name="k_first"> Initial :<input name="k_ini" style="flex:.6"></div>
+<div class="line">Address:<input name="k_addr"></div>
+<div class="line">Email ID:<input type="email" name="k_mail"> Mobile No:<input type="tel" name="k_tel"> Occupation :<input name="k_occ"></div>
+<div class="line">Organization :<input name="k_org"> Relationship:<input name="k_rel"></div>
+
+<h3 style="margin-top:26px">C. PROGRAMME APPLIED FOR</h3>
+<p style="font-style:italic;font-size:15px;margin:0 0 10px 6px">Campuses: Mangochi (MH), Lilongwe(LW), Blantyre (BT)( Choose the one appropriate )</p>
+<div id="prog"></div>
+<h3>D. REDIRECTION</h3>
+<p class="note">If you are not selected to any of your chosen programmes due to stiff competition and limited available Space, you may be considered for selection to any programme which you did not choose but closer to your choice.</p>
+</section>
+
+<section class="page p2">
+<h3>E. PREVIOUS ACADEMIC RECORD <span style="font-weight:normal">( Fill in the gaps below with the relevant information )</span></h3>
+<p>Have you ever been registered as a student of any public university in Malawi? <input class="u" name="e_reg" style="width:70px"> If yes,</p>
+<p>When: <input class="u" name="e_when" style="width:110px"> Programme: <input class="u" name="e_prog" style="width:200px"> Institution: <input class="u" name="e_inst" style="width:220px"></p>
+<p>Reason for leaving your previous institution <input class="u" name="e_reason" style="width:500px"></p>
+<h3>F. ACADEMIC RECORD (MSCE/IGCSE OR OTHER EQUIVALENT INTERNATIONALLY RECOGNIZED QUALIFICATIONS AT ‘O’ LEVEL)</h3>
+<p><b>MSCE: <input type="checkbox" class="cb" name="f_msce"> O-Level: <input type="checkbox" class="cb" name="f_o"> A-Level: <input type="checkbox" class="cb" name="f_a"> Other: Specify <input class="u" name="f_other"></b></p>
+<p>You must attach photocopies of your statement of results or certificates, officially stamped and signed by the Head teacher of your last school where you wrote the examinations, or the District Education Manager, or the District commissioner or any commissioner of Oaths. You cannot use two independent Certificates for purposes of accumulating credits.</p>
+<h3>i. MSCE/O-Level or equivalent qualification (s)</h3>
+<div class="cols" id="olevel"></div>
+</section>
+
+<section class="page p3">
+<h3>ii. A-Level or equivalent qualification (s)</h3>
+<div class="cols" id="alevel"></div>
+<h3 style="margin-top:30px">G. FINANCIAL SUPPORT</h3>
+<p>i) If selected, how will you pay for your university education?</p>
+<p><input class="u" name="g1" style="width:100%"></p>
+<p>ii) Give the name of the sponsor/others/Etc., or put “self”</p>
+<p><input class="u" name="g2" style="width:100%"></p>
+<h3 style="margin-top:30px">H. CANDIDATES WITH SPECIAL NEEDS</h3>
+<p>The University encourages you to disclose any disability/medical condition which could disadvantage your ability to study. All offers are made on academic grounds only, and the information you submit will be used to help DMI-SJBU provide appropriate support. Please tick all that apply.</p>
+<div class="opts" id="needs"></div>
+</section>
+
+<section class="page p4">
+<p>Please detail other disability or additional support needs :</p>
+<textarea name="h_detail"></textarea>
+<h3 style="margin-top:30px">CHECKLIST</h3>
+<p>I <input class="u" name="c_name" style="width:340px"> hereby certify that all the information given on this form is true and further recognize that my application will not be processed if it is incomplete.</p>
+<div class="sig"><span>Signature: <input name="c_sig"></span><span>Date: <input type="date" name="c_date"></span></div>
+<h3>DECLARATION</h3>
+<p>I confirm that I have duly completed all the relevant sections of this application form attached the following supporting documents:</p>
+<ol>
+<li>Copies of all relevant certificates and academic transcripts which are being used for the application. These must be duly certified by a Commissioner of Oaths as true copies of the original</li>
+<li>Source of funding, i.e. official scholarship award/sponsorship letter.</li>
+<li>Proof of payment of an appropriate application fee bearing my name and the amount of application fee paid.</li></ol>
+</section>
+</form>
+
+<script>
+const F=document.getElementById('form');
+const cb=(t,n)=>`<input type="${t}" class="cb" name="${n}">`;
+function cells(id,n,map){const e=document.getElementById(id);for(let i=0;i<n;i++)e.innerHTML+=`<input maxlength="1" placeholder="${map&&map[i]||''}" name="${id}${i}">`;
+ e.addEventListener('input',ev=>{const t=ev.target;t.value=t.value.toUpperCase();if(t.value&&t.nextElementSibling)t.nextElementSibling.focus()});
+ e.addEventListener('keydown',ev=>{const t=ev.target;if(ev.key==='Backspace'&&!t.value&&t.previousElementSibling)t.previousElementSibling.focus()})}
+const m1={},m2={};
+[..."SURNAME"].forEach((c,i)=>m1[i]=c);[..."FIRST"].forEach((c,i)=>m1[16+i]=c);[..."NAME"].forEach((c,i)=>m1[22+i]=c);[..."INITIAL"].forEach((c,i)=>m2[9+i]=c);
+cells('n1',26,m1);cells('n2',26,m2);cells('dob',8,{0:'D',1:'D',2:'M',3:'M',4:'Y',5:'Y',6:'Y',7:'Y'});cells('age',2);
+document.getElementById('prog').innerHTML=['First','Second','Third'].map((n,k)=>`<table><tr><td class="l" rowspan="2">${n}<br>Choice</td><td style="width:128px;border-bottom:0">Programme Name</td><td style="border-bottom:0"><input class="prog" name="p${k}"></td></tr><tr><td style="font-size:12.5px">Mode of Learning</td><td style="font-size:13px"><i>${cb('radio','mode'+k)}Face to Face</i><i>${cb('radio','mode'+k)}Blended</i><i>${cb('radio','mode'+k)}Online</i> Campus ${cb('radio','camp'+k)}<i>MH</i> ${cb('radio','camp'+k)}<i>LW</i> ${cb('radio','camp'+k)}<i>BT</i></td></tr></table>`).join('');
+function block(id,first){const rows=['Year:','Qualification:','Certificate #:','Centre/School Name'+(first?':':''),'Centre #:','Candidate #:'];
+ const r=(l,n)=>`<div class="row">${l}<input name="${n}"></div>`;
+ document.getElementById(id).innerHTML=['1st','2nd','3rd'].map((a,k)=>{const p=id+k;return `<div><div class="t">${a} Attempt &nbsp; Grades</div>${rows.map((l,i)=>r(l,p+'r'+i)).join('')}<div class="sub">${r('From:',p+'f')}${r('To:',p+'t')}</div>${r('Country:',p+'c')}<div class="row h">Subject (Highest to Lowest)</div>${[1,2,3,4,5,6,7,8,9,10].map(i=>`<div class="row">${i}.<input name="${p}s${i}"><input name="${p}g${i}" style="flex:.35" placeholder="Gr"></div>`).join('')}</div>`}).join('')}
+block('olevel',1);block('alevel',0);
+document.getElementById('needs').innerHTML=['No Disability','Learning Difficulty','Deaf/Serious Hearing impairment','Personal care support','Unseen Disability : Eg. Diabetes','Blind/serious visual impairment','Wheelchair user/Mobility issues','Mental Health condition','Other disability not listed here'].map((t,i)=>`<div>${i+1}. ${cb('checkbox','h'+i)} ${t}</div>`).join('');
+
+/* photo */
+document.getElementById('photoIn').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{document.getElementById('photo').innerHTML=`<img src="${r.result}" alt="Applicant photo">`};r.readAsDataURL(f)};
+
+/* autosave (text, checks; photo is not saved) */
+const els=()=>[...F.querySelectorAll('input:not([type=file]),textarea')];
+function save(){localStorage.setItem('dmi-form',JSON.stringify(els().map(e=>e.type==='checkbox'||e.type==='radio'?e.checked:e.value)))}
+function load(){try{const d=JSON.parse(localStorage.getItem('dmi-form')||'[]');els().forEach((e,i)=>{if(d[i]==null)return;e.type==='checkbox'||e.type==='radio'?e.checked=d[i]:e.value=d[i]})}catch(x){}}
+F.addEventListener('input',save);F.addEventListener('change',save);load();
+function clearAll(){if(confirm('Clear everything you have entered?')){localStorage.removeItem('dmi-form');location.reload()}}
+
+function fit(){document.querySelectorAll('.page').forEach(p=>p.style.zoom=Math.min(1,innerWidth/952))}
+fit();addEventListener('resize',fit);
+</script>
+</body></html>
